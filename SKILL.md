@@ -169,7 +169,7 @@ metadata:
 - `references/regulations.md` - 监管政策与合规要求（审批备案、条款规范、偿付能力）
 - `references/pricing_models.md` - 定价模型与精算方法（定价原则、方法、因子体系、再保影响、信保定价、行业参考费率）
 - `references/development_checklist.md` - 产品开发全流程检查清单（7步骤、除外责任矩阵、风险因子体系、权威条款查询渠道）
-- `references/major_insurers_clauses_index.md` - 四大财险公司条款索引（人保/太平洋/平安/太平除外责任对比、448个附加险清单、标准条款结构）
+- `references/major_insurers_clauses_index.md` - 五大财险公司及新兴险种条款索引（人保/太平洋/平安/太平/紫金除外责任对比、448个附加险+紫金152个附加险、临床试验责任险7家公司条款对比、网络安全保险10家公司条款对比及附加险清单、标准条款结构）
 
 ### 数据模板
 - `templates/product_proposal_template.md` - 产品方案模板（12个板块完整模板）

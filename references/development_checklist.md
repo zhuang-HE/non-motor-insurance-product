@@ -487,7 +487,7 @@ exporter.export_pricing_report(pricing_data, output_path="定价报告.docx")
 | 金监局备案查询 | https://www.nfra.gov.cn/cn/view/pages/ItemList.html?itemPId=937&itemId=942 | 无需登录、无验证码、无日期筛选 |
 | 金融产品查询平台 | https://www.jrcpcx.cn/#/query | 有日期筛选、需滑块验证码 |
 | 行业协会产品信息库 | https://www.iachina.cn/col/col226/index.html | 无需登录、数据较旧 |
-| 各保司官网产品中心 | 人保/太平洋/平安/太平官网 | 直接查询在售产品 |
+| 各保司官网产品中心 | 人保/太平洋/平安/太平/紫金官网 | 直接查询在售产品 |
 
 ### A.2 备案目录查询渠道
 | 渠道 | URL | 说明 |
@@ -497,8 +497,10 @@ exporter.export_pricing_report(pricing_data, output_path="定价报告.docx")
 
 ### A.3 标准条款模板
 1. **行业标准示范条款**（行业协会发布）
-2. **四大财险公司条款**（人保/太平洋/平安/太平）
+2. **五大财险公司条款**（人保/太平洋/平安/太平/紫金）
 3. **太平科技保险真实产品模板**（cases/目录）
+4. **临床试验责任保险条款**（平安/太平洋/民安/中华联合/国寿财险等7家，见 `major_insurers_clauses_index.md` 第七章）
+5. **网络安全保险条款**（人保/平安/太平洋/众安/泰康在线/国寿财险等10家，见 `major_insurers_clauses_index.md` 第八章）
 
 ### A.4 附加险清单索引
 | 险种类别 | 附加险数量 | 来源 |
