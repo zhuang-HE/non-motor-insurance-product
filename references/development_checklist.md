@@ -715,13 +715,15 @@ exporter.export_pricing_report(pricing_data, output_path="定价报告.docx")
 | 金监局备案系统 | nfra.gov.cn | 审批/备案公示 |
 
 ### A.3 标准条款模板
-1. **"三首一新"行业示范条款**（首台套5个主险+新材料3个主险+软件首版次5家公司，见 `major_insurers_clauses_index.md` 第九章）
-2. **安全生产责任保险条款**（六大高危行业标准化条款，见 `major_insurers_clauses_index.md` 第十章）
-3. **环境污染责任保险条款**（主险+3个附加险，见 `major_insurers_clauses_index.md` 第十章）
-4. **知识产权/专利保险条款**（见 `major_insurers_clauses_index.md` 第十章）
-5. **中保协已发布/推进中示范条款汇总表**（含所有已发布和推进中的示范条款清单，见 `major_insurers_clauses_index.md` 第十章）
-6. **五大财险公司条款**（人保/太平洋/平安/太平/紫金）
-7. **太平科技保险真实产品模板**（cases/目录）
+1. **太平科技保险全产品条款库**（242个产品，每个含条款.docx+费率表.docx，见 `cases/product_rate_index.md`）
+   - 财产责任险35个 + 科技保险30个 + 信用保证险17个 + 工程险5个 + 货运险8个 + 人身意外险17个 + 附加险131个
+   - 17个关键产品的详细费率表（财产险分级系数、安责险行业费率、建工/安装工程费率、机器损坏险分级、特种设备费率等）
+2. **"三首一新"行业示范条款**（首台套5个主险+新材料3个主险+软件首版次5家公司，见 `major_insurers_clauses_index.md` 第九章）
+3. **安全生产责任保险条款**（六大高危行业标准化条款，见 `major_insurers_clauses_index.md` 第十章）
+4. **环境污染责任保险条款**（主险+3个附加险，见 `major_insurers_clauses_index.md` 第十章）
+5. **知识产权/专利保险条款**（见 `major_insurers_clauses_index.md` 第十章）
+6. **中保协已发布/推进中示范条款汇总表**（含所有已发布和推进中的示范条款清单，见 `major_insurers_clauses_index.md` 第十章）
+7. **五大财险公司条款**（人保/太平洋/平安/太平/紫金）
 8. **临床试验责任保险条款**（平安/太平洋/民安/中华联合/国寿财险等7家，见 `major_insurers_clauses_index.md` 第七章）
 9. **网络安全保险条款**（人保/平安/太平洋/众安/泰康在线/国寿财险等10家，见 `major_insurers_clauses_index.md` 第八章）
 10. **典型非车险产品案例库**（10个教学案例含传统险+创新险+失败案例，见 `cases/typical_products.md`）
