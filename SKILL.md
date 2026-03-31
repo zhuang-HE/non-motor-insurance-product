@@ -52,6 +52,10 @@ metadata:
 ### 步骤4：撰写产品条款开发可行性研究报告
 按8章节标准结构撰写，必须包含监管依据三段式引用和操作风险管控6个方面。
 
+**风险定量分析**（可研报告第4-6章的精算支撑）需参考：
+- `references/actuarial_methods.md` → 第一章（定价方法选择）+ 第五章（损失分布拟合）
+- `references/actuarial_methods.md` → 第六章（数据质量控制与底稿管理）
+
 **详细检查清单**: `references/development_checklist.md` → 步骤4
 
 ### 步骤5：撰写保险产品条款
@@ -182,6 +186,13 @@ metadata:
 - 无直接参考时，找最相似产品费率 × 风险调整系数
 - 精算报告中必须标注"基于精算师经验判断/类比法"
 
+**精算方法参考**:
+- `references/actuarial_methods.md` → 第一章（四种定价方法公式与计算示例）
+- `references/actuarial_methods.md` → 第三章（准备金评估方法：链梯法/B-F法）
+- `references/actuarial_methods.md` → 第四章（再保险定价实务：超赔/成数/溢额）
+- `references/actuarial_methods.md` → 第七章（精算报告必要内容清单 + 定价监管红线）
+- `references/pricing_models.md` → 第八章（行业参考费率 + 242产品库查询优先级）
+
 **详细检查清单**: `references/development_checklist.md` → 步骤6
 
 ### 步骤7：输出保险条款和费率表（Word格式）
@@ -196,9 +207,10 @@ metadata:
 
 ### 核心知识文档
 - `references/development_checklist.md` - **产品开发检查清单**（步骤1-7完整知识指南，含条款模板路由、除外责任矩阵、数据库API需求索引、6大险种因子体系、费率参考、用语规范）
+- `references/actuarial_methods.md` - **⭐精算方法与定价知识库**（四大定价方法公式+示例、GLM/ML建模方法、链梯法/B-F法准备金评估、再保险定价实务、数据质量控制、精算报告内容规范、**定价监管红线**）
 - `references/insurance_products.md` - **非车险产品类型体系**（传统4大类 + 6大新兴产业保险 + 未来产业保险，含行业标准条款结构模板、五大公司除外责任对比、附加险分类体系）
 - `references/pricing_models.md` - **定价模型与精算方法**（4种定价方法详解、再保险定价影响、信保定价逻辑、准备金评估、现代精算方法、**行业参考费率水平表**）
-- `references/regulations.md` - **监管政策与合规要求**（金监局监管体系、核心法规索引、备案材料完整清单、费率监管标准、偿二代二期、消费者保护）
+- `references/regulations.md` - **监管政策与合规要求**（金监局监管体系、核心法规索引、备案材料清单、费率监管标准、**"报行合一"专项要求**、**产品全生命周期管理**、偿二代二期、消费者保护）
 - `references/major_insurers_clauses_index.md` - **五大财险公司条款与费率参考索引**（人保/太平洋/平安/太平/紫金条款对比、中保协14个示范条款汇总、"三首一新"条款、临床试验/网络安全多公司条款对比、行业协会448个附加险清单）
 
 ### 数据模板
