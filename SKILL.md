@@ -40,15 +40,27 @@ metadata:
 ### 步骤1：确定保险标的概念
 分析标的可保性（合法性、确定性、可估价性、可转移性、偶然性），确定标的分类和估价方法。
 
+**科技保险/新兴领域专项**：开发首台套、知识产权、网络安全、绿色保险等产品时，需先掌握标的所属产业知识：
+- `references/industry_knowledge.md` → 第一部分（科技保险核心产业知识）
+- `references/industry_knowledge.md` → 第二部分（承保标的分类与研究方法）
+
 **详细检查清单**: `references/development_checklist.md` → 步骤1
 
 ### 步骤2：明确投保人、被保险人身份
 审查投保人/被保险人资格，认定保险利益类型（所有权/使用权/保管权/抵押权/合同权益/法定责任）。
 
+**风险评估支撑**：需结合标的特性进行风险因子分析：
+- `references/industry_knowledge.md` → 第二部分（风险因子分类体系）
+- `references/industry_knowledge.md` → 第三部分（风险因子定性/计量方法）
+
 **详细检查清单**: `references/development_checklist.md` → 步骤2
 
 ### 步骤3：初步明确保险责任范围
 选择产品类型（基本险/综合险/一切险/特定风险险），设计主险和附加险责任，制定除外责任体系。
+
+**标准体系参考**：条款设计须符合相关国家/行业/团体标准要求：
+- `references/industry_knowledge.md` → 第一部分（GB/JR/T标准体系）
+- `references/industry_knowledge.md` → 第二部分（风险环节识别方法）
 
 **详细检查清单**: `references/development_checklist.md` → 步骤3
 
