@@ -44,6 +44,11 @@ metadata:
 - `references/industry_knowledge.md` → 第一部分（科技保险核心产业知识）
 - `references/industry_knowledge.md` → 第二部分（承保标的分类与研究方法）
 
+**九大新兴产业与七大补充领域**：开发人形机器人、无人车、无人机、AI、生物医药等前沿领域保险时：
+- `references/industry_knowledge.md` → 第四部分（新兴产业与未来产业知识体系）
+  - 人形机器人、无人车、无人机、四足机器人、机械臂、工业机器人、AI、生物医药、医疗器械
+  - 具身智能、集成电路、氢能、食品、保健食品、化妆品、原料药
+
 **详细检查清单**: `references/development_checklist.md` → 步骤1
 
 ### 步骤2：明确投保人、被保险人身份
