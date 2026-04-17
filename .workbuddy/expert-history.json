@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "sessions": {
+    "882e678e04574de3a051082c7374a01f": [
+      {
+        "expertId": "LegalComplianceReviewer",
+        "name": "守规规",
+        "profession": "法律合规审查员",
+        "avatarUrl": "https://acc-1258344699.cos.accelerate.myqcloud.com/workbuddy/experts/avatars/09-Operations/LegalComplianceReviewer/LegalComplianceReviewer.png",
+        "promptUrl": "https://acc-1258344699.cos.accelerate.myqcloud.com/workbuddy/experts/experts/09-Operations/LegalComplianceReviewer/LegalComplianceReviewer_zh.md",
+        "usedAt": 1776398122043,
+        "industryId": "all"
+      }
+    ]
+  },
+  "lastUpdated": 1776400224775
+}
