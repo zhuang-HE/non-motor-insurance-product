@@ -2,9 +2,10 @@
 
 > 🛡️ 面向 AI Agent 的非车险产品开发全流程知识库与工具集
 
-[![Skill](https://img.shields.io/badge/WorkBuddy_Skill-🛡️-blue)](https://github.com/your-org/non-motor-insurance-product-dev)
+[![Skill](https://img.shields.io/badge/WorkBuddy_Skill-🛡️-blue)](https://github.com/zhuang-HE/non-motor-insurance-product)
 [![Coverage](https://img.shields.io/badge/险种覆盖-30%2B-green)](#)
 [![Cases](https://img.shields.io/badge/真实案例-6-orange)](#)
+[![Version](https://img.shields.io/badge/Version-2.2.0-blue)](#)
 
 ## 📖 简介
 
@@ -26,39 +27,6 @@
 - 🔬 科技保险（科技成果转化险、中试费用损失险、科研仪器共享险）
 - 💊 生物医药保险
 - 📊 数据资产保险
-
-## 📂 目录结构
-
-```
-non-motor-insurance-product-dev/
-├── SKILL.md                          # 技能定义文件（入口）
-├── references/                       # 核心知识库
-│   ├── insurance_products.md         # 产品类型体系（30+险种）
-│   ├── underwriting_rules.md         # 核保规则与风险评估
-│   ├── regulations.md                # 监管政策与合规要求
-│   ├── pricing_models.md             # 定价模型与精算方法
-│   ├── development_checklist.md      # 产品开发检查清单（7步骤）
-│   └── major_insurers_clauses_index.md  # 四大财险公司条款索引
-├── templates/                        # 文档模板
-│   ├── product_proposal_template.md  # 产品方案模板（12板块）
-│   └── underwriting_checklist.md     # 核保检查清单（50+项）
-├── cases/                            # 案例库
-│   ├── cases_index.md                # 案例总索引
-│   ├── typical_products.md           # 典型产品案例（10个）
-│   └── 太平科技保险×6产品/            # 真实产品模板
-├── scripts/                          # 自动化脚本
-│   ├── step1_insured_subject.py
-│   ├── step2_policyholder.py
-│   ├── step3_coverage.py
-│   ├── step4_feasibility_report.py
-│   ├── step5_policy_clause.py
-│   ├── step6_pricing.py
-│   └── step7_word_export.py
-└── data_interfaces/                  # 外部数据接口
-    ├── industry_data_api.py
-    ├── credit_rating_api.py
-    └── disaster_risk_api.py
-```
 
 ## 🚀 使用方式
 
@@ -95,6 +63,71 @@ non-motor-insurance-product-dev/
 步骤5: 条款撰写 → 步骤6: 产品定价 → 步骤7: Word输出
 ```
 
+---
+
+## 🆕 v2.2 工作流机制升级
+
+> 本次更新引入行业最佳实践，构建更健壮的产品开发工作流体系。
+
+### 核心新增模块
+
+#### 1. 流程输入/输出契约
+
+每一步明确定义输入来源、输出目标、格式要求和质量门槛，实现流程的标准化和可追溯性：
+
+| 步骤 | 输入来源 | 输出目标 | 格式要求 | 质量门槛 |
+|------|---------|---------|---------|---------|
+| Step 1 | 用户需求描述 | 标的分析报告 | JSON | 合法性+可保性 |
+| Step 2 | Step 1 输出 | 投保人/被保险人定义 | JSON | 资格审查+利益认定 |
+| Step 3 | Step 1-2 输出 | 责任范围定义 | JSON | 主险+附加险+除外 |
+| Step 4 | Step 1-3 输出 | 可研报告 | Markdown | 8章节+监管引用 |
+| Step 5 | Step 3 输出 | 条款 | Markdown | 13章节结构 |
+| Step 6 | Step 5 输出 | 费率表 | Markdown | 定价方法+因子 |
+| Step 7 | Step 5-6 输出 | Word 文档 | .docx | 格式检查通过 |
+
+#### 2. 险种特定条件执行
+
+根据不同险种自动触发额外检查项，确保特定领域的合规性和完整性：
+
+| 险种类型 | 额外检查项 |
+|---------|----------|
+| 安全生产责任险 | 行业准入资质 + 应急管理部门要求 + 事故统计数据 |
+| 网络安全保险 | 数据安全评估 + 等保备案证明 + 历史泄露事件 |
+| 无人机/eVTOL险 | 适航证 + 飞行区域限制 + 操控手资质 |
+| 建筑工程险 | 施工资质 + 安全许可证 + 工期与造价 |
+| 生物医药险 | GCP合规 + 临床批件 + 研究阶段 |
+| 首台套/首版次险 | 技术认定文件 + 推广目录 + 质量标准 |
+| 知识产权险 | 专利有效性 + 侵权风险评估 + 法律状态 |
+| 碳汇/绿色险 | 碳资产确权 + 环境评估 + 第三方认证 |
+
+#### 3. 自我修复与迭代验证
+
+引入质量控制迭代机制，输出前自动检查并修复问题：
+
+- **回退触发条件**：责任与免责矛盾（🔴阻断）、费率低于精算基础（🔴阻断）、章节缺失（🟡警告）
+- **迭代上限**：阻断级问题最多回退2次，超限后输出待解决清单
+- **修复验证清单**：每次回退后必须验证问题已修复且未引入新问题
+
+#### 4. 关键规则强制检查点
+
+三类强制规则（条款/费率/可研），违规时自动阻断输出：
+
+| 规则类别 | 关键规则 |
+|---------|---------|
+| 条款撰写 | 责任免除显著提示 + 赔偿限额分项明确 + 核赔时限合规 |
+| 费率厘定 | 双方法交叉验证 + 费率≥精算基础 + 费用结构完整 |
+| 可行性报告 | 三段式监管引用 + 操作风险全覆盖 + 数据来源标注 |
+
+#### 5. 产品开发清单
+
+完整的生命周期管理体系：
+
+- **产品注册表**：追踪所有产品的开发阶段、状态和进度
+- **阶段里程碑**：需求调研 → 标的分析 → 条款完成 → 费率完成 → 待备案 → 备案完成
+- **优先级定义**：🔴紧急（1-2周）/ 🟡高（1个月）/ 🟢中（3个月）/ 🔵低（待定）
+
+---
+
 ## 📋 核心知识亮点
 
 | 知识点 | 内容 |
@@ -107,6 +140,43 @@ non-motor-insurance-product-dev/
 | **行业费率参考** | 财产险/责任险/科技保险/信保证险 4类基准费率 |
 | **448个附加险** | 行业协会财产险151 + 公众责任险117 + 工程险180 |
 | **6个真实案例** | 太平科技保险存量产品，条款 |
+
+---
+
+## 📂 目录结构
+
+```
+non-motor-insurance-product-dev/
+├── SKILL.md                          # 技能定义文件（入口）
+├── references/                       # 核心知识库
+│   ├── insurance_products.md         # 产品类型体系（30+险种）
+│   ├── underwriting_rules.md         # 核保规则与风险评估
+│   ├── regulations.md                # 监管政策与合规要求
+│   ├── pricing_models.md             # 定价模型与精算方法
+│   ├── development_checklist.md      # 产品开发检查清单（7步骤）
+│   └── major_insurers_clauses_index.md  # 四大财险公司条款索引
+├── templates/                        # 文档模板
+│   ├── product_proposal_template.md  # 产品方案模板（12板块）
+│   └── underwriting_checklist.md     # 核保检查清单（50+项）
+├── cases/                            # 案例库
+│   ├── cases_index.md                # 案例总索引
+│   ├── typical_products.md           # 典型产品案例（10个）
+│   └── 太平科技保险×6产品/            # 真实产品模板
+├── scripts/                          # 自动化脚本
+│   ├── step1_insured_subject.py
+│   ├── step2_policyholder.py
+│   ├── step3_coverage.py
+│   ├── step4_feasibility_report.py
+│   ├── step5_policy_clause.py
+│   ├── step6_pricing.py
+│   └── step7_word_export.py
+└── data_interfaces/                  # 外部数据接口
+    ├── industry_data_api.py
+    ├── credit_rating_api.py
+    └── disaster_risk_api.py
+```
+
+---
 
 ## 📊 案例库
 
@@ -121,17 +191,25 @@ non-motor-insurance-product-dev/
 | 5 | 自动控制系统责任保险 | 技术责任险 | — |
 | 6 | 无人机机身一切险及第三者责任险 | 综合险 | — |
 
+---
+
 ## 🔧 依赖
 
 ```bash
 pip install pandas python-docx requests
 ```
 
+---
+
 ## 📄 许可证
 
 MIT License - 详见 [LICENSE](LICENSE)
 
+---
+
 ## 🙏 致谢
+
+本技能的迭代升级参考了保险行业 AI 应用领域的优秀实践经验。
 
 - 太平科技保险股份有限公司 - 提供真实产品模板
 - 中国保险行业协会 - 行业标准条款和附加险清单
