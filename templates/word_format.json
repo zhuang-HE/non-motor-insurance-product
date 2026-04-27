@@ -1,0 +1,46 @@
+{
+  "document_title": {
+    "font_name": "宋体",
+    "font_size": 22,
+    "bold": true,
+    "alignment": "center",
+    "space_after": 20
+  },
+  "chapter_title": {
+    "font_name": "仿宋",
+    "font_size": 16,
+    "bold": true,
+    "alignment": "center",
+    "space_before": 40,
+    "space_after": 30
+  },
+  "body_text": {
+    "font_name": "仿宋",
+    "font_size": 16,
+    "bold": false,
+    "alignment": "both",
+    "first_line_indent": 840,
+    "line_spacing": 560,
+    "space_after": 0
+  },
+  "clause_number": {
+    "font_name": "仿宋",
+    "font_size": 16,
+    "bold": true,
+    "alignment": "left"
+  },
+  "exclusion_clause": {
+    "font_name": "仿宋",
+    "font_size": 16,
+    "bold": true,
+    "color": "FF0000",
+    "alignment": "both"
+  },
+  "page_margins": {
+    "top": 2.54,
+    "bottom": 2.54,
+    "left": 3.17,
+    "right": 3.17
+  },
+  "paper_size": "A4"
+}
