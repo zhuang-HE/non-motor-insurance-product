@@ -130,6 +130,8 @@ metadata:
 | **药品质量安全责任险** | `cases/药品质量安全责任保险/条款.docx` | 上市后药品安全 |
 | **药品上市许可持有人责任险** | `references/pharmaceutical-liability-insurance-standard.md` → 第4.2节 | MAH制度+团体标准示范条款 |
 | **SUSAR责任保险** | `references/pharmaceutical-liability-insurance-standard.md` → 第4.1.4-4.1.5节 | 可疑且非预期严重不良反应专项 |
+| **药品上市许可持有人责任险（太平洋财险）** | `cases/药品上市许可持有人责任保险（太平洋财险）/条款.docx` | SUSAR主险+MAH责任+法律费用 |
+| **药品上市许可持有人责任险附加不良反应补偿（太平洋财险）** | `cases/药品上市许可持有人责任保险附加不良反应补偿（太平洋财险）/条款.docx` | AE补偿附加险+不重复赔偿 |
 | **专精特新综合险** | `cases/专精特新企业综合保险/条款.docx` | 多险合一综合保障 |
 | **科技企业研发中断险** | `cases/科技企业研发中断保险（2025版）/条款.docx` | 研发中断损失 |
 | **创业项目失败费用险** | `cases/创业项目失败费用损失保险/条款.docx` | 创新项目费用损失 |

@@ -3,8 +3,8 @@
 > 🛡️ 面向 AI Agent 的非车险产品开发全流程知识库与工具集
 
 [![Skill](https://img.shields.io/badge/WorkBuddy_Skill-v2.4.0-blue)](https://github.com/zhuang-HE/non-motor-insurance-product-dev)
-[![Coverage](https://img.shields.io/badge/险种覆盖-35%2B-green)](#)
-[![Cases](https://img.shields.io/badge/真实案例-6-orange)](#)
+[![Coverage](https://img.shields.io/badge/险种覆盖-37%2B-green)](#)
+[![Cases](https://img.shields.io/badge/真实案例-8-orange)](#)
 
 ## 📖 简介
 
@@ -115,17 +115,25 @@ non-motor-insurance-product-dev/
 ## 📝 版本更新
 
 ### v2.4.0 (2026-05-09)
-**新增：T/GDCCA药品责任保险团体标准**
+**新增：T/GDCCA药品责任保险团体标准 + 太平洋财险条款库**
+
+团体标准部分：
 - 新增 `references/pharmaceutical-liability-insurance-standard.md`
-- 临床试验责任保险：完整主险/附加险条款示范、责任免除、理赔准则
+- 临床试验责任险：完整主险/附加险条款示范、责任免除、理赔准则
 - 药品上市许可持有人责任险：完整条款示范、责任免除、理赔准则
 - SUSAR（可疑且非预期严重不良反应）分类定价原则
-- 服务实施要求：承保准备→风险减量→理赔服务→退保处理
+- 服务实施要求：承保→风控→理赔→退保→持续改进
 - 触发词扩充：持有人责任险、药责险、SUSAR、团体标准T/GDCCA
+
+条款库新增（太平洋财险）：
+- `cases/药品上市许可持有人责任保险（太平洋财险）/条款.docx`
+  - 主险：SUSAR责任+法律费用+12项免除+未满期保费公式
+- `cases/药品上市许可持有人责任险附加不良反应补偿（太平洋财险）/条款.docx`
+  - 附加险：AE补偿+不重复赔偿+药品安全危害事件除外
 
 ## 📊 案例库
 
-基于太平科技保险真实产品模板：
+基于太平科技保险真实产品模板 + 太平洋财险条款：
 
 | # | 产品 | 类型 | 费率参考 |
 |---|------|------|---------|
@@ -135,6 +143,8 @@ non-motor-insurance-product-dev/
 | 4 | 中试项目费用损失保险 | 费用损失险 | — |
 | 5 | 自动控制系统责任保险 | 技术责任险 | — |
 | 6 | 无人机机身一切险及第三者责任险 | 综合险 | — |
+| 7 | 药品上市许可持有人责任保险（太平洋财险） | MAH责任险 | SUSAR主险+法律费用 |
+| 8 | 药品上市许可持有人责任险附加不良反应补偿（太平洋财险） | AE补偿附加险 | 不重复赔偿 |
 
 ## 🔧 依赖
 
