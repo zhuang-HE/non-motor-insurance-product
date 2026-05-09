@@ -2,8 +2,8 @@
 
 > 🛡️ 面向 AI Agent 的非车险产品开发全流程知识库与工具集
 
-[![Skill](https://img.shields.io/badge/WorkBuddy_Skill-🛡️-blue)](https://github.com/your-org/non-motor-insurance-product-dev)
-[![Coverage](https://img.shields.io/badge/险种覆盖-30%2B-green)](#)
+[![Skill](https://img.shields.io/badge/WorkBuddy_Skill-v2.4.0-blue)](https://github.com/zhuang-HE/non-motor-insurance-product-dev)
+[![Coverage](https://img.shields.io/badge/险种覆盖-35%2B-green)](#)
 [![Cases](https://img.shields.io/badge/真实案例-6-orange)](#)
 
 ## 📖 简介
@@ -24,7 +24,7 @@
 - 🚁 低空经济保险（无人机机身险、第三者责任险、eVTOL运营险）
 - 💡 知识产权保险（专利执行险、专利被侵权损失险）
 - 🔬 科技保险（科技成果转化险、中试费用损失险、科研仪器共享险）
-- 💊 生物医药保险
+- 💊 生物医药保险（**临床试验责任险**、**药品上市许可持有人责任险**、**药物质量安全责任险**）
 - 📊 数据资产保险
 
 ## 📂 目录结构
@@ -38,7 +38,8 @@ non-motor-insurance-product-dev/
 │   ├── regulations.md                # 监管政策与合规要求
 │   ├── pricing_models.md             # 定价模型与精算方法
 │   ├── development_checklist.md      # 产品开发检查清单（7步骤）
-│   └── major_insurers_clauses_index.md  # 四大财险公司条款索引
+│   ├── major_insurers_clauses_index.md  # 四大财险公司条款索引
+│   └── pharmaceutical-liability-insurance-standard.md  # 药品责任保险团体标准(T/GDCCA)
 ├── templates/                        # 文档模板
 │   ├── product_proposal_template.md  # 产品方案模板（12板块）
 │   └── underwriting_checklist.md     # 核保检查清单（50+项）
@@ -82,7 +83,9 @@ non-motor-insurance-product-dev/
 核保规则、可行性报告、保险责任、责任免除、保险产品设计、产品开发流程、
 网络安全保险、绿色保险、碳汇保险、低空经济、无人机保险、eVTOL、
 知识产权保险、专利保险、数据资产保险、科技保险、中试保险、
-生物医药保险、信用保证险
+生物医药保险、临床试验责任险、药品上市许可持有人责任险、持有人责任险、
+药责险、药品责任保险、药物质量安全责任险、SUSAR、团体标准T/GDCCA、
+信用保证险
 ```
 
 ### 开发流程
@@ -107,6 +110,18 @@ non-motor-insurance-product-dev/
 | **行业费率参考** | 财产险/责任险/科技保险/信保证险 4类基准费率 |
 | **448个附加险** | 行业协会财产险151 + 公众责任险117 + 工程险180 |
 | **6个真实案例** | 太平科技保险存量产品，条款 |
+| **T/GDCCA团体标准** | 药品责任保险条款及服务规范完整条款示范 |
+
+## 📝 版本更新
+
+### v2.4.0 (2026-05-09)
+**新增：T/GDCCA药品责任保险团体标准**
+- 新增 `references/pharmaceutical-liability-insurance-standard.md`
+- 临床试验责任保险：完整主险/附加险条款示范、责任免除、理赔准则
+- 药品上市许可持有人责任险：完整条款示范、责任免除、理赔准则
+- SUSAR（可疑且非预期严重不良反应）分类定价原则
+- 服务实施要求：承保准备→风险减量→理赔服务→退保处理
+- 触发词扩充：持有人责任险、药责险、SUSAR、团体标准T/GDCCA
 
 ## 📊 案例库
 
@@ -135,4 +150,5 @@ MIT License - 详见 [LICENSE](LICENSE)
 
 - 太平科技保险股份有限公司 - 提供真实产品模板
 - 中国保险行业协会 - 行业标准条款和附加险清单
+- 广东省生物医药创新技术协会 - T/GDCCA药品责任保险团体标准
 - 国家金融监督管理总局 - 监管政策依据
